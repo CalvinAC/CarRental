@@ -2,6 +2,7 @@
 'RCET 6025
 'Fall 2020
 'Car Rental
+'https://github.com/CalvinAC/CarRental
 
 Option Explicit On
 Option Strict On
@@ -14,8 +15,6 @@ Public Class RentalForm
         Dim data As Boolean
         Dim zip, odmEnd, odmStart, days As Integer
         Dim name As Integer
-        'how to submit this assignment
-        'validate string in text boxes
 
         If NameTextBox.Text = "" Then
             data = False
@@ -41,7 +40,6 @@ Public Class RentalForm
         Else
             data = True
         End If
-        'Return IsNumeric(CityTextBox.Text)
 
         If StateTextBox.Text = "" Then
             data = False
@@ -50,8 +48,6 @@ Public Class RentalForm
         Else
             data = True
         End If
-
-        'Return IsNumeric(StateTextBox.Text)
 
         If ZipCodeTextBox.Text = "" Then
             data = False
@@ -140,11 +136,6 @@ Public Class RentalForm
         Return data
     End Function
 
-    'Function NameValidate() As Boolean
-
-    '    Return IsNumeric(NameTextBox.Text)
-
-    'End Function
     Private Sub CalculateButton_Click(sender As Object, e As EventArgs) Handles CalculateButton.Click
         Dim startOdm, endOdm, milesCost, seniorDisc, aaaDisc As Double
         Dim dayCharge, dayChargeCalc As Integer
